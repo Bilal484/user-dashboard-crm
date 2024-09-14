@@ -1,0 +1,107 @@
+.category-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.category-list li {
+    width: 100%;
+}
+
+.category-list a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #333;
+    background-color: #f5f5f5;
+    text-decoration: none;
+    border-left: 4px solid transparent;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.category-list a:hover {
+    background-color: #eaeaea;
+    border-left: 4px solid rgb(255, 43, 43);
+    padding-left: 24px;
+    color: gray;
+}
+
+.category-list a:active {
+    background-color: #ddd;
+    border-left: 4px solid rgb(255, 43, 43);
+    color: gray;
+}
+
+
+.product-img {
+    width: 100%;
+    height: auto;
+}
+
+.product-card {
+    margin-bottom: 30px;
+}
+
+.product-card {
+    position: relative;
+}
+
+.product-card .card-body .btn {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, bottom 0.3s ease;
+}
+
+.product-card:hover .card-body .btn {
+    bottom: 80px;
+    opacity: 1;
+    visibility: visible;
+    transition: .4 all ease;
+}
+
+
+.view-icons i {
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.discount-box {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.modal-content {
+    border-radius: 15px;
+}
+
+.modal-body img {
+    max-width: 100%;
+    border-radius: 15px 0 0 15px;
+}
+
+.card button a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .discount-box {
+        display: none;
+    }
+}
